@@ -26,6 +26,20 @@ body {
   --text: #eaeaea;
 }
 
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 20px 25px;
+  font-size: 20px;
+  display: none;
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
 /** nav bar **/
 nav{
   display: flex;
@@ -290,6 +304,14 @@ footer h6{
   color: var(--primary);
   font-size: 40px;
 }
+.menu a{
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 50px;
+  color: var(--primary);
+  text-decoration: none;
+}
 .menu img {
   position: relative;
   width: 40%;
@@ -310,4 +332,19 @@ footer h6{
 .menu img:hover{
   transform: translateY(-100px);
 }
+
+/** menuFilter.html **/
+.products{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.filteredMenu img {
+  width: 300px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+
+
 

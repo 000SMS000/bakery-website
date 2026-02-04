@@ -23,52 +23,28 @@
         </div>
         <a href="/contact.html" class="logoButton" id="heroBtn">ORDER NOW</a>
     </nav>
-    
     <!-- menu -->
-    <section class="menu">  
 
-        <h1>Our Menu</h1>
+     <h1>Our Menu</h1>
 
-        <a href="menuFilter.html"> Filter </a>
+       <div class="filters">
+  <button data-filter="all">All</button>
+  <button data-filter="bread">Breads</button>
+  <button data-filter="cake">Cakes</button>
+  <button data-filter="pastry">Pastries</button>
+</div>
 
-        <img src="img/why us1.jpg" alt="menuPic">
-        <div style="top: 380px;">
-            <h2>Artisan Whole Grain Bread <br> $4.50</h2>        
-        </div>
+    <section class="filteredMenu">  
 
-        <img src="img/why us2.jpg" alt="menuPic">
-        <div style="top: 380px; left: 840px;">
-            <h2>Custard Donuts<br> $2.00 </h2>
-        </div>
-
-        <img src="img/why us3.jpg" alt="menuPic">
-        <div style="top: 1000px;">
-            <h2>Tiramisu<br> $6.00 </h2>
-        </div>
-
-        <img src="img/ourImg1.jpg" alt="menuPic">
-        <div style="top: 1000px; left: 840px;">
-            <h2>Raspberry Tart<br> $4.00 </h2>
-        </div>
-
-        <img src="img/ourImg2.jpg" alt="menuPic">
-        <div style="top: 1610px;">
-            <h2>Berry Danish Pastry<br> $3.50 </h2>
-        </div>
-
-        <img src="img/ourImg3.jpg" alt="menuPic">
-        <div style="top: 1610px; left: 840px;">
-            <h2>Chocolate Chip Cookies<br> $1.50 </h2>
-        </div>
-
-        <img src="img/ourImg5.jpg" alt="menuPic">
-        <div style="top: 2180px;">
-            <h2>Chocolate Cupcake<br> $2.50 </h2>
-        </div>
-
-        <img src="img/ourImg7.jpg" alt="menuPic">
-        <div style="top: 2180px; left: 840px;">
-            <h2>Cinnamon Roll<br> $3.00 </h2>
+        <div class="products">
+            <div class="product" data-category="bread"><img src="img/why us1.jpg" alt="menuPic" data-category="bread" class="product"></div>
+            <div class="product" data-category="bread"><img src="img/why us2.jpg" alt="menuPic" data-category="pastry" class="product"></div>
+            <div class="product" data-category="cake"><img src="img/why us3.jpg" alt="menuPic" data-category="cake" class="product"></div>
+            <div class="product" data-category="cake"><img src="img/ourImg1.jpg" alt="menuPic" data-category="pastry" class="product"></div>
+            <div class="product" data-category="pastry"><img src="img/ourImg2.jpg" alt="menuPic" data-category="pastry" class="product"></div>
+            <div class="product" data-category="pastry"><img src="img/ourImg3.jpg" alt="menuPic" data-category="cake" class="product"></div>
+            <div class="product" data-category="cake"><img src="img/ourImg5.jpg" alt="menuPic" data-category="cake" class="product"></div>
+            <div class="product" data-category="cake"><img src="img/ourImg7.jpg" alt="menuPic" data-category="cake" class="product"></div>
         </div>
 
     </section>

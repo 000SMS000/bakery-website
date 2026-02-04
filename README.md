@@ -18,7 +18,7 @@ It focuses on clean design, user-friendly layout.
 ## 🛠️ Technologies Used
 - HTML5  
 - CSS3
-- 
+- JS
 ---
 
 ## ✨ Features

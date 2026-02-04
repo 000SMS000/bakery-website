@@ -37,6 +37,7 @@ if (myinput) {
     };
 }
 
+// dark mode toggle
 const toggle = document.getElementById("darkToggle");
 
 if (toggle) {
@@ -44,3 +45,36 @@ if (toggle) {
     document.body.classList.toggle("dark");
   });
 }
+
+// back to top
+const backBtn = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backBtn.style.display = "block";
+  } else {
+    backBtn.style.display = "none";
+  }
+});
+
+backBtn?.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// filter products
+const filterBtns = document.querySelectorAll("[data-filter]");
+const products = document.querySelectorAll(".product");
+
+filterBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const category = btn.dataset.filter;
+
+    products.forEach(product => {
+      if (category === "all" || product.dataset.category === category) {
+        product.style.display = "block";
+      } else {
+        product.style.display = "none";
+      }
+    });
+  });
+});
