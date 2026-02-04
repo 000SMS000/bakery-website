@@ -69,8 +69,13 @@ nav a{
   border-radius: 30px;
   padding: 10px 30px 10px 30px;
   font-size: 15px;
+  border: solid 2px var(--primary);
 }
 
+.logoButton:hover{
+  background-color: var(--bg-main);
+  color: var(--primary);
+}
 /** hero card **/
 .hero{
   position: relative;
@@ -112,11 +117,16 @@ nav a{
   color: floralwhite;
   text-decoration: none;
   border-radius: 30px;
+  border: solid 2px var(--primary);
   padding: 20px 40px 20px 40px;
   font-size: 15px;
   margin: 20px;
 }
 
+.heroButton:hover{
+  background-color: var(--bg-main);
+  color: var(--primary);
+}
 /** why us **/
 
 .whyLogo img{
@@ -163,9 +173,15 @@ nav a{
   background-color: var(--primary);
   color: floralwhite;
   text-decoration: none;
+  border: solid 2px var(--primary);
   border-radius: 30px;
   padding: 10px 30px 10px 30px;
   font-size: 15px;
+}
+
+.whyButton:hover{
+  background-color: var(--bg-secondary);
+  color: var(--primary);
 }
 /** visit us **/
 
@@ -199,11 +215,16 @@ nav a{
   background-color: var(--primary);
   color: floralwhite;
   text-decoration: none;
+  border: solid 2px var(--primary);
   border-radius: 30px;
   padding: 10px 40px 10px 40px;
   font-size: 15px;
 }
 
+.visitButton:hover{
+  background-color: var(--bg-main);
+  color: var(--primary);
+}
 .visit input{
   padding: 10px;
   border-radius: 10px;
@@ -334,17 +355,131 @@ footer h6{
 }
 
 /** menuFilter.html **/
-.products{
-  display: grid;
-  grid-template-columns: auto auto auto;
+
+.menu-header {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.filteredMenu img {
+.menu-header h1 {
+  color: var(--heading);
+  margin-bottom: 20px;
+}
+
+.filters button {
+  background: var(--primary);
+  color: floralwhite;
+  border: none;
+  padding: 10px 18px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product {
+  margin: 10px;
+  width: 240px;
+  background: var(--bg-secondary);
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product h3 {
+  color: var(--heading);
+  margin: 15px 0 5px;
+}
+
+.price {
+  color: var(--primary);
+  font-weight: bold;
+}
+/** contact **/
+
+.contact{
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact img{
+  width: 500px;
+  margin: 20px;
+  border: solid 3px var(--primary);
+}
+.contactForm{
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.contactForm input{
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  margin-right: 20px;
   width: 300px;
-  border-radius: 20px;
   margin: 20px;
 }
 
+.contactForm textarea{
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  margin-right: 20px; 
+  width: 300px;
+  margin: 20px;
+}
 
+.contactForm button{
+  width: 200px;
+  margin: 20px;
+  background-color: var(--primary);
+  color: floralwhite;
+  border: solid 2px var(--primary);
+  border-radius: 30px;
+  padding: 10px 40px 10px 40px;
+  font-size: 15px;
+  cursor: pointer;
 
+}
 
+.contactForm button:hover{
+  background-color: var(--bg-main);
+  color: var(--primary);
+}
+
+/** about us **/
+
+.aboutUs h1 {
+  text-align: center;
+  color: var(--heading);
+  margin: 50px;
+  font-size: 50px;
+}
+
+.aboutUs p{
+  text-align: center;
+  margin: 30px 100px 60px 100px;
+  color: var(--heading);
+}
+
+.aboutUs iframe{
+  display: block;
+  width: 700px;
+  height: 400px;
+  margin: 0 auto;
+  border: solid 3px var(--primary);
+  border-radius: 20px;
+}
