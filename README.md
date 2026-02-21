@@ -5,7 +5,7 @@ A modern and responsive bakery website designed to showcase bakery products, men
 ---
 
 ## 🌐 Live Demo
-👉 https://000sms000.github.io/bakery-website/  
+👉 https://000sms000/bakery-website/  
 
 ---
 
